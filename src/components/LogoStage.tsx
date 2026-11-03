@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { asset } from "@/lib/asset";
+import { LocaleLink } from "@/components/LocaleLink";
 
-export function LogoStage() {
+export function BrandMark() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -15,24 +16,23 @@ export function LogoStage() {
   }, []);
 
   return (
-    <section className="border-b border-[var(--line)]" aria-label="Asel">
-      <div className="wrap">
-        {ready ? (
-          <model-viewer
-            src={asset("/marka/logo.glb")}
-            alt="Asel"
-            camera-controls
-            interaction-prompt="none"
-            shadow-intensity="0.85"
-            exposure="1.05"
-            environment-image="neutral"
-            camera-orbit="0deg 78deg auto"
-            className="logo-stage"
-          />
-        ) : (
-          <div className="logo-stage" />
-        )}
-      </div>
-    </section>
+    <LocaleLink to="/" className="inline-flex shrink-0" aria-label="Asel">
+      {ready ? (
+        <model-viewer
+          src={asset("/marka/logo.glb")}
+          alt="Asel"
+          interaction-prompt="none"
+          shadow-intensity="0.45"
+          exposure="1.1"
+          environment-image="neutral"
+          camera-orbit="0deg 84deg auto"
+          field-of-view="6deg"
+          min-field-of-view="4deg"
+          className="header-logo"
+        />
+      ) : (
+        <img src={asset("/marka/logo.png")} alt="" className="header-logo-fallback" />
+      )}
+    </LocaleLink>
   );
 }

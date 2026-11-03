@@ -63,18 +63,27 @@ img {
   max-width: 100%;
 }
 
-.logo-stage {
+.header-logo,
+.header-logo-fallback {
   display: block;
-  width: 100%;
-  height: 22rem;
+  width: 9.5rem;
+  height: 2.6rem;
   background: transparent;
   --poster-color: transparent;
+  pointer-events: none;
 }
 
-@media (min-width: 768px) {
-  .logo-stage {
-    height: 30rem;
+@media (min-width: 640px) {
+  .header-logo {
+    width: 14rem;
+    height: 3rem;
   }
+}
+
+.header-logo-fallback {
+  width: auto;
+  height: 2rem;
+  object-fit: contain;
 }
 
 a {

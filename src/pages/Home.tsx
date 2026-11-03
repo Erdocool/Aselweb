@@ -7,7 +7,6 @@ import { asset } from "@/lib/asset";
 import { LocaleLink } from "@/components/LocaleLink";
 import { ProductCard } from "@/components/ProductCard";
 import { Teaser } from "@/components/Teaser";
-import { LogoStage } from "@/components/LogoStage";
 
 export function Home() {
   const { t } = useI18n();
@@ -21,7 +20,6 @@ export function Home() {
   return (
     <div>
       {intro && <Teaser onDone={() => setIntro(false)} />}
-      <LogoStage />
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute right-0 top-10 h-80 w-80 rounded-full bg-[var(--glow)] blur-3xl" />
         <div className="wrap grid items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">

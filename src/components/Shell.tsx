@@ -9,6 +9,7 @@ import { isActive, stripLocale, withLocale } from "@/lib/paths";
 import { CompareBar } from "./CompareBar";
 import { asset } from "@/lib/asset";
 import { LocaleLink } from "./LocaleLink";
+import { BrandMark } from "./LogoStage";
 
 const companyLinks = [
   { to: "/hakkimizda", key: "about" },
@@ -71,9 +72,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-[var(--header)] backdrop-blur">
       <div className="wrap flex h-[4.5rem] items-center gap-4">
-        <LocaleLink to="/" className="inline-flex shrink-0 bg-black px-2 py-1" aria-label="Asel">
-          <img src={asset("/marka/logo.png")} alt="Asel" className="h-8 w-auto" />
-        </LocaleLink>
+        <BrandMark />
         <nav className="ml-auto hidden items-center gap-5 text-sm lg:flex" aria-label="Asel">
           {links.slice(0, 2).map((item) => (
             <LocaleLink key={item.to} to={item.to} className={isActive(location.pathname, item.to) ? "text-[var(--accent)]" : ""}>
