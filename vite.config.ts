@@ -14,7 +14,7 @@ export default defineConfig({
   server: {
     port: 5173,
     watch: {
-      ignored: ["**/ASEL-NIAPRO/**"],
+      ignored: ["**/ASEL-NIAPRO/**", "**/*.blend", "**/*.blend1", "**/*.bak", "**/.tmp.driveupload/**"],
     },
   },
 });

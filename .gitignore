@@ -3,3 +3,6 @@ dist
 .DS_Store
 *.local
 ASEL-NIAPRO/
+*.blend
+*.blend1
+*.bak
