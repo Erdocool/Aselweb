@@ -7,16 +7,16 @@
 
 :root {
   color-scheme: dark;
-  --bg: #090909;
-  --bg-elev: #121212;
-  --bg-soft: #1b1b1b;
+  --bg: #4a4a4a;
+  --bg-elev: #555555;
+  --bg-soft: #5e5e5e;
   --text: #f5f5f4;
-  --muted: #a3a3a3;
-  --line: rgba(255, 255, 255, 0.12);
+  --muted: #c8c8c8;
+  --line: rgba(255, 255, 255, 0.16);
   --accent: #e10600;
   --accent-ink: #ffffff;
   --glow: rgba(225, 6, 0, 0.35);
-  --header: rgba(9, 9, 9, 0.88);
+  --header: rgba(74, 74, 74, 0.92);
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 }
 
