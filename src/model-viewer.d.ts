@@ -13,6 +13,7 @@ type ModelViewerProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLEleme
   "camera-orbit"?: string;
   "field-of-view"?: string;
   "min-field-of-view"?: string;
+  "interpolation-decay"?: string;
   "rotation-per-second"?: string;
 };
 
