@@ -7,8 +7,8 @@ import { useTheme } from "@/context/Theme";
 import { useCompare } from "@/context/Compare";
 import { isActive, stripLocale, withLocale } from "@/lib/paths";
 import { CompareBar } from "./CompareBar";
+import { asset } from "@/lib/asset";
 import { LocaleLink } from "./LocaleLink";
-import { Logo } from "./Logo";
 
 const companyLinks = [
   { to: "/hakkimizda", key: "about" },
@@ -71,8 +71,8 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-[var(--header)] backdrop-blur">
       <div className="wrap flex h-[4.5rem] items-center gap-4">
-        <LocaleLink to="/" className="shrink-0" aria-label="Asel">
-          <Logo />
+        <LocaleLink to="/" className="inline-flex shrink-0 bg-black px-2 py-1" aria-label="Asel">
+          <img src={asset("/marka/logo.png")} alt="Asel" className="h-8 w-auto" />
         </LocaleLink>
         <nav className="ml-auto hidden items-center gap-5 text-sm lg:flex" aria-label="Asel">
           {links.slice(0, 2).map((item) => (
@@ -165,7 +165,7 @@ function Footer() {
     <footer className="border-t border-[var(--line)]">
       <div className="wrap grid gap-8 py-12 md:grid-cols-4">
         <div>
-          <Logo />
+          <img src={asset("/marka/logo.png")} alt="Asel" className="h-8 bg-black px-2 py-1" />
           <p className="mt-4 text-sm text-[var(--muted)]">{t.footer.note}</p>
         </div>
         <div className="grid content-start gap-2 text-sm">

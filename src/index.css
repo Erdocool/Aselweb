@@ -71,61 +71,6 @@ a {
   font-family: var(--font-display);
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.brand-mark {
-  height: 2.15rem;
-  width: auto;
-}
-
-.brand-word {
-  display: inline-flex;
-  align-items: center;
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  line-height: 0.8;
-}
-
-.brand-as,
-.brand-el {
-  display: inline-block;
-}
-
-.brand-as {
-  color: #ff3a2a;
-  text-shadow:
-    0 -1px 0 #ffb2a8,
-    1px 1px 0 #c41200,
-    2px 2px 0 #8e0c00,
-    3px 3px 0 #560700,
-    4px 4px 0 rgba(0, 0, 0, 0.45);
-}
-
-.brand-el {
-  color: #f7f7f7;
-  text-shadow:
-    0 -1px 0 #ffffff,
-    1px 1px 0 #d5d5d5,
-    2px 2px 0 #9c9c9c,
-    3px 3px 0 #686868,
-    4px 4px 0 rgba(0, 0, 0, 0.4);
-}
-
-[data-theme="light"] .brand-el {
-  color: #1a1a1a;
-  text-shadow:
-    0 -1px 0 #ffffff,
-    1px 1px 0 #c8c8c8,
-    2px 2px 0 #8f8f8f,
-    3px 3px 0 #5c5c5c;
-}
-
 .wrap {
   width: min(1180px, calc(100% - 2rem));
   margin-inline: auto;
